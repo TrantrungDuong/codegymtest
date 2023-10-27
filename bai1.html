@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function findAvg(scores) {
+      let total=0;
+      let average;
+      for (let i = 0; i < scores.length; i++) {
+          total= total+scores[i];
+      }
+      average =  total/scores.length;
+      return average;
+  }
+  alert(findAvg([1,2,3]));
+</script>
+
+</body>
+</html>

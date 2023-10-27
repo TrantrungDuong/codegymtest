@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function isPrime(x){
+    for(let i = 2; i <= x ; i++) {
+      if(x%i===0){
+        return false;
+      }else
+        return true;
+    }
+  }
+  function sumOfListPrime(num){
+    let total=0;
+    for (let i = 0; i <=num; i++) {
+      if (isPrime(i)){
+        total+=i;
+      }
+    }
+    return total;
+  }
+  let total = sumOfListPrime(5);
+  alert(total);
+</script>
+
+</body>
+</html>

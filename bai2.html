@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function insertNumberToArray(arr, x, index){
+
+      if (index<0 || index> arr.length){
+          return arr;
+      }else {
+          arr = arr.splice(index,0,x);
+          return arr;
+      }
+  }
+  let array = [1,2,3,4,5]
+  let numbertoAdd = 6;
+  let insertToIndex = 2;
+  alert(insertNumberToArray(array,numbertoAdd,insertToIndex))
+</script>
+
+</body>
+</html>
